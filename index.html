@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+body {
+  margin: 0;
+  font-family: "Times New Roman", serif;
+  background: #000;
+  text-align: center;
+  color: white;
+}
+
+.card {
+  max-width: 420px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background: #1f2221;
+}
+
+/* TOP */
+.top {
+  background: #fff;
+  padding: 15px 20px 0;
+  border-bottom: 4px solid #00cfc8;
+}
+
+.profile {
+  width: 205px;
+  height: 205px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #00cfc8;
+}
+
+.signature-img {
+  width: 300px;
+  display: block;
+  margin: -10px auto 0;
+}
+
+/* BOTTOM */
+.bottom {
+  padding: 20px 20px 35px; /* قللنا الفراغ */
+  background:
+    linear-gradient(rgba(31,34,33,0.95), rgba(31,34,33,0.95)),
+    url("https://www.transparenttextures.com/patterns/world-map.png");
+}
+
+/* NAME */
+h1 {
+  color: #00e0d9;
+  font-size: 28px;
+  margin: 0 0 2px; /* مهم */
+}
+
+.job-title {
+  font-size: 24px;
+  color: #fff;
+  margin: 0 0 4px; /* مهم */
+}
+
+/* LOGOS */
+.logos-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  margin: 0; /* شلنا الفراغ */
+}
+
+.logo-box {
+  width: 75px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-box img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.tradelin-logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* MEMBER */
+.member-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  transform: translateY(-8px); /* رفعناه */
+}
+
+.member-row span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.member-row img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+/* LINKS */
+.links {
+  max-width: 340px;
+  margin: 8px auto 0; /* قللنا الفراغ */
+}
+
+.link-btn {
+  display: flex;
+  align-items: center;
+  margin: 12px 0;
+  text-decoration: none;
+  color: white;
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #00cfc8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+}
+
+.text {
+  flex: 1;
+  border: 2px solid #00cfc8;
+  border-left: none;
+  border-radius: 0 30px 30px 0;
+  padding: 12px;
+  background: rgba(0,0,0,0.35);
+  text-align: left;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+/* FOOTER */
+.footer {
+  margin-top: 30px;
+  font-size: 24px;
+  color: #00e0d9;
+  font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+  <div class="top">
+    <img class="profile" src="profile.jpeg">
+    <img class="signature-img" src="SIGNATURE.png">
+  </div>
+
+  <div class="bottom">
+
+    <h1>Sabra Sulaiman Albusaidi</h1>
+    <div class="job-title">Founder & CEO</div>
+
+    <div class="logos-row">
+      <div class="logo-box"><img src="OIBN.png"></div>
+      <div class="logo-box"><img src="EXPO.png"></div>
+      <div class="logo-box tradelin-logo">TradeLin</div>
+    </div>
+
+    <div class="member-row">
+      <span>Member of</span>
+      <img src="OES.png">
+    </div>
+
+    <div class="links">
+
+      <a class="link-btn" href="tel:+96890999346">
+        <div class="icon"><i class="fa-solid fa-phone"></i></div>
+        <div class="text">+968 90999346</div>
+      </a>
+
+      <a class="link-btn" href="https://wa.me/96890999346">
+        <div class="icon"><i class="fa-brands fa-whatsapp"></i></div>
+        <div class="text">WhatsApp</div>
+      </a>
+
+      <a class="link-btn" href="https://www.instagram.com/sabra_sulaiman/">
+        <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+        <div class="text">Instagram</div>
+      </a>
+
+      <a class="link-btn" href="mailto:Sabra@oibn.net">
+        <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+        <div class="text">Sabra@oibn.net</div>
+      </a>
+
+      <a class="link-btn" href="https://www.oibn.net">
+        <div class="icon"><i class="fa-solid fa-globe"></i></div>
+        <div class="text">www.oibn.net</div>
+      </a>
+
+      <a class="link-btn" href="https://www.linkedin.com/in/sabra-albusaidi-1a246b2b8/">
+        <div class="icon"><i class="fa-brands fa-linkedin"></i></div>
+        <div class="text">LinkedIn</div>
+      </a>
+
+    </div>
+
+    <div class="footer">Master Mind Networking</div>
+
+  </div>
+
+</div>
+
+</body>
+</html>
